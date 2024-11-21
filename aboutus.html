@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+<title>Badminton Club</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/mainlogo.png" type="image/x-icon"> 
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById("myTopnav");
+  const distance = navbar.offsetTop;
+
+  if (window.pageYOffset > distance) {
+    navbar.classList.add("fixed");
+    document.body.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed");
+    document.body.classList.remove("fixed-nav");
+  }
+});
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.slide-in');
+    var position = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
+
+    if (position < screenPosition) {
+        element.classList.add('active');
+    }
+});
+</script>
+
+<style>
+.media-logo {
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  border-radius: 14px;
+}
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.8s ease-in-out, transform 1.8s ease-in-out;
+}
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.hover-title h1 {
+    color: #495464;
+    font-size: 48px;
+    font-family: Papyrus;
+}
+.hover-title h1:hover {
+    color: red; 
+    text-decoration: underline; 
+    transition: all 0.3s ease-in-out; 
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-section {
+  margin-bottom: 40px; 
+  overflow: hidden;
+}
+.about-section img {
+  float: left; 
+  margin-right: 20px; 
+  max-width: 30%; 
+}
+.blur-clear img {
+  filter: blur(3px);
+  transition: filter 0.5s ease; 
+}
+.blur-clear img:hover {
+  filter: blur(0);
+}
+.about-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+  color: red;
+  text-shadow: 2px 2px 4px rgba(82, 80, 80, 0.8);
+}
+.pulsate {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: italic;
+  text-align: center;
+} 
+.about-section ul {
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: italic;
+  text-align: center;
+}
+#contact {
+  text-align: center;
+  padding-top: 0.5px;
+  border-top: solid 1.5px #38201c;
+}
+
+</style>
+
+</head> 
+
+<body>
+
+<div id="container">
+    <br/><br/>
+    <img alt="A GIF sun" src="Images/logo.gif" style="max-width: 18%; margin-right: 1px; margin-bottom: 80px; margin-top: 50px;"/>
+    <div id="header">
+        Sunshine Badminton Club
+        <div style="font-size: 22px;">Welcome!</div>
+    </div> 
+    <br/>
+    <br/>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About us ▼
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About Us</a>
+                <a href="bod.html">Committee Introduction</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            </div>
+            <a href="login.html">Login</a>
+            <div class="dropdown">
+                <button class="dropbtn">Membership ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="membership.html">Membership</a> 
+                    <a href="form.html">Form to Fill Up</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Rules and regulations ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content"> 
+                    <a href="rulesandregulations.html">Rules and Regulations</a> 
+                    <a href="wellness.html">Wellness</a>
+                    <a href="shop.html">Shop</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Events ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="events.html">Events</a> 
+                    <a href="newsupdates.html">News updates</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Links ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="links.html">Links</a> 
+                    <a href="contactinfo.html">Contact Information</a> 
+                    <a href="policy.html">Privacy Policy</a> 
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <div class="slide-in" id="content-area">
+            <div class="hover-title">
+                <h1>About us</h1>
+            </div> 
+            <br/>
+            <div id="page-content">
+                <div class="about-section">
+                    <div class="blur-clear">
+                        <img src="Images/mainlogo.png" alt="Sunshine badminton logo" style="max-width: 28%; margin-right: 20px;">
+                    </div>
+                    <div class="text-right">
+                        <br/>
+                        <h3 class="pulsate">Our Mission and Values</h3>
+                        <p>Our goal at the Sunshine Badminton Club is to uphold and foster the deep love and respect that our community has for badminton. 
+                        Our goal is to create a friendly environment where players of all backgrounds and ability levels may not only participate but also flourish. 
+                        We are committed to creating an atmosphere that goes beyond simple competition.</p>
+                        <p>Within our club, we value tolerance and diversity because we appreciate the unique contributions that each member makes to the courts. 
+                        We extend a warm welcome to all players, regardless of experience level, fostering a diverse range of experiences and abilities that enrich the colourful fabric of our badminton community.</p>
+    
+                    </div>
+                </div>
+                <div class="about-section">
+                    <div class="blur-clear">
+                        <img src="Images/badminton_group.jpeg" alt="Group Photo" style="max-width: 28%; margin-right: 20px; margin-top: 2px;">
+                    </div>
+                    <div class="text-right">
+                        <h3 class="pulsate">Legacy of Success</h3>
+                        <p>The Sunshine Badminton Club has built a heritage of outstanding accomplishments and unforgettable victories throughout the years that have helped to define who we are and drive us ahead.</p>
+                        <p>We've joyfully enjoyed multiple wins in local and regional competitions since our founding. 
+                        We have established ourselves as a formidable force in the badminton world because to the skill and tenacity of our players. 
+                        Our success stories have been greatly aided by the knowledge and commitment of our trainers.</p>
+                        <ul>
+                            <li>Masiswa Badminton Championship & President CUP 2023</li>
+                            <li>Trident Game 2023</li>
+                            <li>Sukipt Tournament 2022</li>
+                            <li>Friendly Match with Belaking BC</li>
+                            <li>Friendly Match with Serdang BC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <details>
+            <summary>
+                Open Me 
+            </summary>
+                <div id="contact">
+                    <p>Follow us on social media:</p>
+                    <a href="https://www.facebook.com/apubadmintonclub" target="_blank">
+                        <img src="Images/facebook_logo.png" alt="Facebook" class="media-logo">
+                    </a>
+                    <a href="https://www.instagram.com/apu.badminton/" target="_blank">
+                        <img src="Images/insta_logo.png" alt="Instagram" class="media-logo">
+                    </a>
+                    <a href="apubmtnclub@gmail.com" target="_blank">
+                        <img src="Images/gmail_logo.png" alt="Gmail" class="media-logo">
+                    </a>
+                    <br/><br/>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1466274461595!2d101.70056140000004!3d3.055405699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb795025d9%3A0x1c37182a714ba968!2sAsia%20Pacific%20University%20of%20Technology%20%26%20Innovation%20(APU)!5e0!3m2!1sen!2smy!4v1699967316100!5m2!1sen!2smy" 
+                    width="500" height="350" style="border: 2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br/><br/>
+                </div>
+            </details>
+            <br/>
+    
+            <div id="cover">
+                <a href="home.html">
+                    <div class="button_slide slide_left">Back</div>
+                </a>
+                <a href="blog.html">
+                    <div class="button_slide slide_right">Next</div>
+                </a>
+            </div>
+            <br/>
+        </div>
+        <div id="footer">
+            <div class="footer-left">
+                <h3>Sunshine Badminton Club</h3>
+        
+                <p>Copyright &#169; 2023 Sunshine Badminton Club <br/>All rights reserved</p>
+            </div>
+            
+            <div class="footer-center">
+                <table>
+                    <tr>
+                        <td><img src="icon for footer/envelope.png" class="footer-envelope" alt="icon"/></td>
+                        <td><p>sunshinebadmintonclub@mail.apu.edu.my</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icon for footer/phone.png" class="footer-phone" alt="icon"/></td>
+                        <td><p>016-804-0107 - Janice Tan Hooi Chii <br/>
+                            011-1088-7482 - Lim Shu Yi <br/>
+                            010-770-2168 - Kong Yin Er <br/>
+                            017-222-0611 - Nicole Lim Ko Er</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="icon for footer/location.png" class="footer-location" alt="icon"/></td>
+                        <td><p>04-01, Block B, Level 3 @ APU New Campus</p></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="footer-right">
+                <p class="footer-aboutclub">
+                    <span>About the club</span>
+                    Sunshine Badminton Club fosters an inclusive and friendly environment for badminton enthusiasts, providing a platform for players of all skill levels to engage in the sport with joy.
+                </p>
+        
+                <p class="footer-query">
+                    <span>Any questions?</span>
+                    Get to Contact Us Page by clicking <a href="contactinfo.html">HERE</a>
+                </p>
+            </div>
+        </div>
+    <div id="footer-credit">Created by: Janice Tan Hooi Chii TP073888</div>
+</div>
+</body>
+        
+</html>
+    

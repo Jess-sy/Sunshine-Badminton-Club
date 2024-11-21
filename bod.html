@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Committee Introduction</title>
+<link rel="icon" href="Images/mainlogo.png" type="image/x-icon"> 
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/bod.js"></script>
+
+<style>
+.fancy-heading {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80px;
+  color: #FFAE42;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+.image-box {
+  text-align: center; /* Center the content within each image-box */
+  margin: 0 30px;
+}
+.image-box img {
+  width: 400px;
+  height: auto;
+}
+.image-container .image-box {
+  text-align: center;
+  margin: 0 50px; /* Adjust the margin to increase the gap between pictures */
+}
+.text-box {
+  background-color: #FFAE42;
+  color: #fff;
+  padding: 20px; /* Adjust the padding for the text box */
+  margin-top: 0px; /* Adjust the top margin for space between image and text box */
+  max-width: 400px; /* Set the maximum width for the text box */
+  text-align: center; /* Center the text horizontally */
+  font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+/* Add space between the images in the same row */
+.image-container .image-box:not(:first-child) {
+  margin-left: 50px; /* Adjust the left margin for all image boxes except the first one in the row */
+}
+
+.toggle-button {
+  background-color: #FFAE42;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.expanded-text-box {
+  display: none;
+  background-color: #FFAE42;
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px; /* Adjust the top margin for space between the button and expanded text box */
+  max-width: 270px; 
+  text-align: center;
+  margin-left: 25px; 
+}
+
+.text-box.active .expanded-text-box {
+  display: block;
+}
+</style>
+
+</head>
+
+<body>
+  <!-- Beginning of nav bar -->
+<div id="container">
+    <br/><br/>
+    <img alt="A GIF sun" src="Images/logo.gif" style="max-width: 18%; margin-right: 1px; margin-bottom: 80px; margin-top: 50px;"/>
+    <div id="header">
+        Sunshine Badminton Club
+        <div style="font-size: 22px;">Welcome!</div>
+    </div> 
+    <br/>
+    <br/>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About us ▼
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About Us</a>
+                <a href="bod.html">Committee Introduction</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            </div>
+            <a href="login.html">Login</a>
+            <div class="dropdown">
+                <button class="dropbtn">Membership ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="membership.html">Membership</a> 
+                    <a href="form.html">Form to Fill Up</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Rules and regulations ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content"> 
+                    <a href="rulesandregulations.html">Rules and Regulations</a> 
+                    <a href="wellness.html">Wellness</a>
+                    <a href="shop.html">Shop</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Events ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="events.html">Events</a> 
+                    <a href="newsupdates.html">News updates</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Links ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="links.html">Links</a> 
+                    <a href="contactinfo.html">Contact Information</a> 
+                    <a href="policy.html">Privacy Policy</a> 
+                </div>
+            </div>
+        </div>
+        <br/>
+
+          <h1 class="fancy-heading">Meet Our Committees :)</h1>
+
+            <div class="image-container">
+              <div class="image-box">
+                <img src="Images/Janice.jpg" alt="Image of Janice Tan Hooi Chii" />
+                <div class="text-box">
+                  <p>Janice Tan Hooi Chii</p>
+                  <p>President</p>
+                  <button class="toggle-button">Read More</button>
+                  <div class="expanded-text-box">
+                  <p>Background:</p>
+                  <p>Janice Tan is a seasoned badminton player with a deep passion for the sport. Holding a degree in Sports Management, she brings a wealth of knowledge in organizing events and managing sports-related activities.</p>
+                   <p>Achievements:</p>
+                   <p>Janice has represented the club in various tournaments, showcasing her skills on the court. Her commitment to the club has played a crucial role in its growth and success.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-box">
+                <img src="Images/LIM SHU YI.jpg" alt="Image of Lim Shu Yi" />
+                <div class="text-box">
+                  <p> Lim Shu Yi</p>
+                  <p> Vice President</p>
+                  <button class="toggle-button">Read More</button>
+                  <div class="expanded-text-box">
+                  <p>Background:</p>
+                   <p>Lim Shu Yi, with a background in Sports Science, is a dedicated individual who believes in the holistic development of badminton players. She has been actively involved in coaching and training programs, contributing significantly to the skill enhancement of club members.</p>
+                  <p>Achievements:</p>
+                  <p>Lim Shu Yi has won accolades in regional tournaments and holds coaching certifications, ensuring that the club's training programs align with the latest methodologies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <div class="image-box">
+                <img src="Images/Nicole.jpg" alt="Image of Nicole Lim Ko Er" />
+                <div class="text-box">
+                  <p>Nicole Lim Ko Er</p>
+                  <p>Secretary</p>
+                  <button class="toggle-button">Read More</button>
+                  <div class="expanded-text-box">
+                  <p>Background:</p>
+                  <p>Nicole, a sports enthusiast, brings her organizational and communication skills to the committee. With a degree in Business Administration, she ensures that the club's administrative tasks are efficiently managed, allowing other members to focus on their roles.</p>
+                  <p>Achievements:</p>
+                  <p>Nicole has successfully coordinated multiple tournaments, demonstrating her ability to handle logistical challenges and contribute to the seamless functioning of the club.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-box">
+                <img src="Images/yiner.jpg" alt="Image of Kong Yin Er" />
+                <div class="text-box">
+                  <p> Kong Yin Er</p>
+                  <p> Treasurer</p>
+                  <button class="toggle-button">Read More</button>
+                  <div class="expanded-text-box">
+                  <p>Background:</p>
+                  <p>Kong Yin Er, a finance professional with a keen interest in badminton, takes charge of the club's financial matters. Her meticulous approach ensures transparent financial transactions, allowing the club to allocate resources effectively.</p>
+                  <p>Achievements:</p>
+                  <p>Kong Yin Er's financial acumen has helped the club secure sponsorships and manage funds prudently. Her efforts have played a crucial role in the club's financial stability and the ability to invest in equipment and facilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="cover">
+              <a href="aboutus.html">
+                  <span class="button_slide slide_left">Back</span>
+              </a>
+              <a href="blog.html">
+                  <span class="button_slide slide_right">Next</span>
+              </a>
+          </div>
+
+          <div id="footer" style="left: 95px; bottom: -176px">
+            <div class="footer-left">
+              <h3>Sunshine Badminton Club</h3>
+              <p>Copyright &#169; 2023 Sunshine Badminton Club <br />All rights reserved</p>
+            </div>
+        
+            <div class="footer-center">
+              <table>
+                <tr>
+                  <td><img src="icon for footer/envelope.png" class="footer-envelope" alt="icon" /></td>
+                  <td><p>sunshinebadmintonclub@mail.apu.edu.my</p></td>
+                </tr>
+                <tr>
+                  <td><img src="icon for footer/phone.png" class="footer-phone" alt="icon" /></td>
+                  <td><p>016-804-0107 - Janice Tan Hooi Chii <br />
+                      011-1088-7482 - Lim Shu Yi <br />
+                      010-770-2168 - Kong Yin Er <br />
+                      017-222-0611 - Nicole Lim Ko Er</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="icon for footer/location.png" class="footer-location" alt="icon" /></td>
+                  <td><p>04-01, Block B, Level 3 @ APU New Campus</p></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="footer-right">
+              <p class="footer-aboutclub">
+                <span>About the club</span>
+                Sunshine Badminton Club fosters an inclusive and friendly environment for badminton enthusiasts, providing a platform for players of all skill levels to engage in the sport with joy.
+              </p>
+          
+              <p class="footer-query">
+                <span>Any questions?</span>
+                Get to Contact Us Page by clicking <a href="contactinfo.html">HERE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer-credit">Created by: Nicole Lim Ko Er TP066049</div>
+        
+        </body>
+        
+        </html>
+ 

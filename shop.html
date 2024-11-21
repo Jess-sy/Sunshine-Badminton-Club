@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Shop</title>
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="Images/mainlogo.png" type="image/x-icon"> 
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById("myTopnav");
+  const distance = navbar.offsetTop;
+
+  if (window.pageYOffset > distance) {
+    navbar.classList.add("fixed");
+    document.body.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed");
+    document.body.classList.remove("fixed-nav");
+  }
+});
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.slide-in');
+    var position = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
+
+    if (position < screenPosition) {
+        element.classList.add('active');
+    }
+});
+
+    function openInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+</script>
+
+<style>
+#page-title{
+	font-family: Elephant;
+	font-size: 60px;
+	text-align:center;
+}
+
+#page-content { 
+    text-align: justify;
+    padding: 12px;
+    padding-top: 0px;
+}
+
+.about-section h2{
+	font-family: serif;
+	font-weight: bold;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block; 
+  width: 180px;
+  background:white;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  padding: 15px;
+  text-align: left;
+  font-size:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+    <br/><br/>
+    <img alt="A GIF sun" src="Images/logo.gif" style="max-width: 18%; margin-right: 1px; margin-bottom: 80px; margin-top: 50px;"/>
+    <div id="header">
+        Sunshine Badminton Club
+        <div style="font-size: 22px;">Welcome!</div>
+    </div> 
+    <br/>
+    <br/>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About us ▼
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About Us</a>
+                <a href="bod.html">Committee Introduction</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            </div>
+            <a href="login.html">Login</a>
+            <div class="dropdown">
+                <button class="dropbtn">Membership ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="membership.html">Membership</a> 
+                    <a href="form.html">Form to Fill Up</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Rules and regulations ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content"> 
+                    <a href="rulesandregulations.html">Rules and Regulations</a> 
+                    <a href="wellness.html">Wellness</a>
+                    <a href="shop.html">Shop</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Events ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="events.html">Events</a> 
+                    <a href="newsupdates.html">News updates</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Links ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="links.html">Links</a> 
+                    <a href="contactinfo.html">Contact Information</a> 
+                    <a href="policy.html">Privacy Policy</a> 
+                </div>
+            </div>
+        </div>
+        <br/>
+
+	<div class="slide-in" id="content-area">
+        <div id="page-title">
+            Shop
+        </div> 
+        <br/> 
+                
+        <div id="page-content">
+        	<div class="about-section">
+        		<h2>Rackets</h2>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/racket1.jpeg" alt="racket" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>VICTOR Thruster K RYUGA TD</h3>
+			  			<p>RM459.08</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/820003203/17797607327?d_id=72ae4&utm_content=3uYACc8w8Dcci9tagQWAdbhq3p3Z')">Buy Now</button>
+			  		</div>
+
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/racket2.jpeg" alt="racket" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Li Ning AXFORCE 100 AYPT235</h3>
+			  			<p>RM904.72</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/570101279/22053544867?d_id=72ae4&utm_content=3uYACc8w8Dj6bZSjjEs5Sq1nzs8j')">Buy Now</button>
+			  		</div>
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/racket3.jpeg" alt="racket" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Yonex Astrox 70<br/><br/><br/></h3>
+			  			<p>RM629.90</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/238381749/18090318859?d_id=72ae4&utm_content=3uYACc8w8Dtrk6E4eXCg1KTF8af9')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/racket4.jpeg" alt="racket" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Yonex Arcsaber 7 Pro<br/><br/></h3>
+			  			<p>RM699.90</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/182869020/20136250436?d_id=72ae4&utm_content=3uYACc8w8EQbPYXtHE24dGULc4wH')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<br/><br/>
+				
+				<h2>Shuttlecock</h2>
+        		<div class="gallery">
+			    	<img src="image_for_shop/shuttlecock1.jpeg" alt="shuttlecock" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>RSL Shuttlecock (Gold)</h3>
+			  			<p>RM81.10</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/875638899/22652648521?d_id=72ae4&utm_content=3uYACc8w8DD8PHsBBuBjzqxnDmAw')">Buy Now</button>
+			  		</div>
+
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/shuttlecock2.jpeg" alt="shuttlecock" width="800" height="400"/>
+			  		<div class="desc">
+			  			<h3>RSL Shuttlecock (Supreme)</h3>
+			  			<p>RM96.10</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/RSLShuttlecock-(Supreme)-i.875638899.18092943456')">Buy Now</button>
+			  		</div>
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/shuttlecock3.jpeg" alt="shuttlecock" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>RSL Shuttlecock (Classic)</h3>
+			  			<p>RM89.10</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/RSL-Shuttlecock-(Classic)-i.875638899.17798632473')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<br/><br/>
+				
+				<h2>Tops</h2>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/tops1.jpeg" alt="tops" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Li-Ning Mens Badminton Tee AAYP067-4</h3>
+			  			<p>RM160.00</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/238381749/18331430998?d_id=72ae4&utm_content=3uYACc8w9dwFYQwbSGGcEXhwi39Z')">Buy Now</button>
+			  		</div>
+
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/tops2.jpeg" alt="tops" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Yonex Comfort Club 5 Training Shirt RM2413</h3>
+			  			<p>RM49.90</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/182869020/23027766015?d_id=72ae4&utm_content=3uYACc8w9dsApt37HpCNuw3J3AjR')">Buy Now</button>
+			  		</div>
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/tops3.jpeg" alt="tops" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>MAXX Graphic Tee MXGT058<br/><br/></h3>
+			  			<p>RM19.44</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/MAXX-Graphic-Tee-MXGT058-i.167103071.17587095257?sp_atk=5aeab2c8-a8d6-4057-bdfa-5090b7beddfa&xptdk=5aeab2c8-a8d6-4057-bdfa-5090b7beddfa')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/tops4.jpeg" alt="tops" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>YOUNG Women Fresco 4<br/><br/></h3>
+			  			<p>RM32.00</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/YOUNG-Breathable-Women-Fresco-4-Fit-Cutting-Badminton-Shirt-Quickdry-Tournament-Jersey-Breathable-Sport-Baju-Sukan-%E8%BF%90%E5%8A%A8%E8%A1%A3-i.311284156.14237354693?sp_atk=debf244a-f7e3-491d-ae17-2fbb8c31127a&xptdk=debf244a-f7e3-491d-ae17-2fbb8c31127a')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/tops5.jpeg" alt="tops" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Adidas FreeLift 3 Bar H08751<br/><br/></h3>
+			  			<p>RM119.20</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/adidas-TRAINING-Sportswear-FreeLift-3-Bar-T-Shirt-Men-Green-H08751-i.283343095.8784391156?sp_atk=148a4cfe-ec5a-4f70-9fed-ffce7c69dd8e&xptdk=148a4cfe-ec5a-4f70-9fed-ffce7c69dd8e')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<h2>Pants and Shorts</h2>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/pants1.jpeg" alt="pants" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>MAXX Plain Sport Shorts MXPP064</h3>
+			  			<p>RM38.94</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/MAXX-Plain-Sport-Shorts-MXPP064-i.167103071.22769442477')">Buy Now</button>
+			  		</div>
+
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/pants2.jpeg" alt="pants" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>VICTOR 2023 Badminton Shorts</h3>
+			  			<p>RM27.30</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/210354743/22849945319?d_id=72ae4&utm_content=3uYACc8w9ehoAjBTe4nByiFgkKUs')">Buy Now</button>
+			  		</div>
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/pants3.jpeg" alt="pants" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Maxx Long Pants Tracksuit T10</h3>
+			  			<p>RM34.90</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/20534822/5138743627?d_id=72ae4&utm_content=3uYACc8w9em9LH7TBnRznoDzqZDy')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/pants4.jpeg" alt="pants" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Yonex badminton skirts</h3>
+			  			<p>RM27.30</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/413362087/23540511973?d_id=72ae4&utm_content=3uYACc8w9eoyatm46zc2vwzon2ZM')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<h2>Others</h2>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/shoes1.jpeg" alt="shoes" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>Li-Ning Saga 2 Pro<br/><br/></h3>
+			  			<p>RM599.00</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/601746209/23943917328?d_id=72ae4&utm_content=3uYACc8w8EoedfZMkuT8ckyewPyy')">Buy Now</button>
+			  		</div>
+
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/shoes2.jpeg" alt="shoes" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>PROTECH Badminton Court Shoes</h3>
+			  			<p>RM128.88</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/product/2923864/19567141296?d_id=72ae4&utm_content=3uYACc8w9aULPPu8bKFX6cCAxqTM')">Buy Now</button>
+			  		</div>
+				</div>
+			
+				<div class="gallery">
+			    	<img src="image_for_shop/wristband.jpeg" alt="wristband" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>PROTECH - Sports Wristband</h3>
+			  			<p>RM3.80</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/PROTECH-Sports-Wristband-Badminton-Fitness-Gym-Sports-Sports-Wristband--i.133710105.18991838815?sp_atk=ee3b6d8c-3cae-42ad-8846-27f187e060ab&xptdk=ee3b6d8c-3cae-42ad-8846-27f187e060ab')">Buy Now</button>
+			  		</div>
+				</div>
+				
+				<div class="gallery">
+			    	<img src="image_for_shop/socks.jpeg" alt="socks" width="600" height="400"/>
+			  		<div class="desc">
+			  			<h3>YONEX 2023 Low Cut Socks W001</h3>
+			  			<p>RM7.88</p>
+			  			<button onclick ="openInNewTab('https://shopee.com.my/YONEX-2023-Best-Selling-Thick-Comfortable-Durable-Badminton-Sock-Fit-Low-Cut-Socks-W001-Stokin-Badminton-Stokin-Tebal-i.179021789.4511222012?sp_atk=10277747-4f26-4c3a-ab4a-a00869204ec9&xptdk=10277747-4f26-4c3a-ab4a-a00869204ec9')">Buy Now</button>
+			  		</div>
+				</div>
+			</div>
+		</div>
+	
+
+		<div id="cover">
+			<a href="wellness.html">
+	        <div class="button_slide slide_left">Back</div>
+	        </a>
+	        <a href="events.html">
+	        <div class="button_slide slide_right">Next</div>
+	        </a>
+	    </div>
+	
+	    <br/><br/>
+	</div>
+		
+		<div id="footer">
+			<div class="footer-left">
+				<h3>Sunshine Badminton Club</h3>
+		
+				<p>Copyright &#169; 2023 Sunshine Badminton Club <br/>All rights reserved</p>
+			</div>
+			
+			<div class="footer-center">
+				<table>
+					<tr>
+						<td><img src="icon for footer/envelope.png" class="footer-envelope" alt="icon"/></td>
+						<td><p>sunshinebadmintonclub@mail.apu.edu.my</p></td>
+					</tr>
+					<tr>
+						<td><img src="icon for footer/phone.png" class="footer-phone" alt="icon"/></td>
+						<td><p>016-804-0107 - Janice Tan Hooi Chii <br/>
+							011-1088-7482 - Lim Shu Yi <br/>
+							010-770-2168 - Kong Yin Er <br/>
+							017-222-0611 - Nicole Lim Ko Er</p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="icon for footer/location.png" class="footer-location" alt="icon"/></td>
+						<td><p>04-01, Block B, Level 3 @ APU New Campus</p></td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="footer-right">
+				<p class="footer-aboutclub">
+					<span>About the club</span>
+					Sunshine Badminton Club fosters an inclusive and friendly environment for badminton enthusiasts, providing a platform for players of all skill levels to engage in the sport with joy.
+				</p>
+		
+				<p class="footer-query">
+					<span>Any questions?</span>
+					Get to Contact Us Page by clicking <a href="contactinfo.html">HERE</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div id="footer-credit">Created by: Lim Shu Yi 	TP074665</div>
+
+			
+</body>
+
+</html>

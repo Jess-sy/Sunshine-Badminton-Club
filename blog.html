@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Blog</title>
+<link href="css/blog.css" rel="stylesheet" type="text/css" />
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="Images/mainlogo.png" type="image/x-icon"> 
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById("myTopnav");
+  const distance = navbar.offsetTop;
+
+  if (window.pageYOffset > distance) {
+    navbar.classList.add("fixed");
+    document.body.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed");
+    document.body.classList.remove("fixed-nav");
+  }
+});
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.slide-in');
+    var position = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
+
+    if (position < screenPosition) {
+        element.classList.add('active');
+    }
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+    <br/><br/>
+    <img alt="A GIF sun" src="Images/logo.gif" style="max-width: 18%; margin-right: 1px; margin-bottom: 80px; margin-top: 50px;"/>
+    <div id="header">
+        Sunshine Badminton Club
+        <div style="font-size: 22px;">Welcome!</div>
+    </div> 
+    <br/>
+    <br/>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About us ▼
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About Us</a>
+                <a href="bod.html">Committee Introduction</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            </div>
+            <a href="login.html">Login</a>
+            <div class="dropdown">
+                <button class="dropbtn">Membership ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="membership.html">Membership</a> 
+                    <a href="form.html">Form to Fill Up</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Rules and regulations ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content"> 
+                    <a href="rulesandregulations.html">Rules and Regulations</a> 
+                    <a href="wellness.html">Wellness</a>
+                    <a href="shop.html">Shop</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Events ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="events.html">Events</a> 
+                    <a href="newsupdates.html">News updates</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Links ▼
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="links.html">Links</a> 
+                    <a href="contactinfo.html">Contact Information</a> 
+                    <a href="policy.html">Privacy Policy</a> 
+                </div>
+            </div>
+        </div>
+        <br/>
+
+		<div class="slide-in" id="content-area">
+			<div class="page-title">
+				<h1>Blog</h1>
+			</div>
+			
+			<div class="row">
+				<div class="leftcolumn">
+					<div class="card">
+						<h2 id="1">FOUNDER</h2>
+						<h5>Mr Wong Chung Wei</h5>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<th><img src="Images/founder.jpg" id="img"/></th>
+								<th>
+								<p><b>Our founder Mr Wong Chung Wei</b></p>
+								<p>Grew up with a dream inspired by the legendary Malaysian badminton player, Dato Lee Chong Wei. From a young age, he admired Chong Wei's determination, skill, and sportsmanship, and he aspired to follow in his hero's footsteps.</p>
+								<p>With his high school teacher's mentorship, he soared to international heights. Stepping onto the international stage, Ali carried not just his dream but prove that inspiration, coupled with resilience, could turn a humble dream into a remarkable reality.</p>
+								<p>Grateful, Mr Wong start a badminton club, becoming the mentor he once sought, ensuring dreams thrived by the youngsters nowadays that have a same dreams as he was.</p>
+								</th>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="card">
+						<h2 id="2">INSPIRATION</h2>
+						<h5>Dato Lee Chong Wei</h5>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<th>
+								<p><b>Dato Lee Chong Wei, a retired Malaysian badminton player</b></p>
+								<p>Widely regarded as one of the greatest singles players in the history of the sport. Born on October 21, 1982, in Bagan Serai, Perak, Malaysia, Chong Wei's remarkable career spanned from the early 2000s to 2019.</p>
+								<p>His playing style was characterized by his speed, agility, and powerful strokes. He achieved numerous accolades throughout his career, including multiple Olympic and World Championship silver medals. He became the world No. 1-ranked men's singles player several times, showcasing his dominance in the badminton world.</p>
+								<p>Beyond his achievements on the court, He is celebrated for his sportsmanship, humility, and contributions to Malaysian sports. In recognition of his outstanding career, he was conferred with the title "Dato" by the Malaysian government, a prestigious honor.</p>
+								<p>Dato Lee Chong Wei's impact extends beyond his playing days, inspiring aspiring badminton players worldwide and leaving an indelible mark on the sport's history. His story is one of talent, perseverance, and a commitment to excellence in the world of badminton.</p>
+								</th>
+								<th><img src="Images/inspiration.jpg" id="img"/></th>
+							</tr>
+						</table>        		
+					</div>
+
+					<div class="card">
+						<h2 id="3">CLUB MEMBER</h2>
+						<h5>Sunshine Badminton club</h5>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<th><img src="Images/group-photo.png" id="img"/></th>
+								<th>
+								<p><b>There are total of 30 members in our club.</b></p>
+								<p>Passionate young badminton enthusiasts are emerging around the world, eager to make their mark on the sport. These budding players often start their journeys with a deep love for badminton, fueled by the excitement of the game and the influence of accomplished players.</p>
+								<p>Our badminton club has served as fertile grounds for these aspiring players. They often demonstrate impressive skills and a hunger for improvement. They participate in local tournaments, school competitions, and sometimes even national events, showcasing their talent and commitment. </p>
+								</th>
+							</tr>
+						</table>
+					</div>
+
+					<div class="card">
+						<h2 id="4">COMPETITION</h2>
+						<h5>2022-2023</h5>
+						<div class="gallery">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th colspan="2">
+									<h5>Masiswa Badminton Championship & President CUP 2023</h5>
+									</th>
+								</tr>
+								<tr>
+									<td><img src="Images/masiswa.png" /></td>
+									<td><img src="Images/masiswa2.png"/></td>
+								</tr>
+								<tr>
+									<th><h5>Trident Game 2023</h5></th>
+									<th><h5>Sukipt Tournament 2022</h5></th>
+								</tr>
+								<tr>
+									<td><img src="Images/trident.png"/></td>
+									<td><img src="Images/sukipt.png" /></td> 	        			
+								</tr>
+								<tr>
+									<th colspan="2">
+									<h5>Friendly Match with Belakong BC</h5>
+									</th>
+								</tr>
+								<tr>
+									<td><img src="Images/balakong.png" /></td>
+									<td><img src="Images/balakong2.png" /></td>
+								</tr>
+		
+							</table>
+						</div>
+					</div>
+					
+					<div class="card">
+						<h2 id="5">TEAMS AND PLAYER</h2>
+						<h5 id="6">Singles</h5>
+						<div class="gallery2">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><h5>Women's Singles</h5></th>
+									<th><h5>Men's Singles</h5></th>
+								</tr>
+								<tr>
+									<td><img src="Images/women-single-team.png" /></td>
+									<td><img src="Images/men's-single-team.jpg" /></td> 	        			
+								</tr>
+							</table>
+						</div>
+						<br/>
+
+						<h5 id="7">Doubles</h5>
+						<div class="gallery2">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<th><h5>Women's Doubles</h5></th>
+									<th><h5>Men's Doubles</h5></th>
+								</tr>
+								<tr>
+									<td><img src="Images/women-double-team.png" /></td>
+									<td><img src="Images/men-double-team.jpg" /></td>	      			
+								</tr>
+								<tr>
+									<th><h5>Mixed Doubles</h5></th>
+								</tr>
+								<tr>
+									<td><img src="Images/mixed-double-team.jpg" /></td>  
+								</tr>
+							</table>
+						</div>
+					</div>
+				
+			    </div class="rightcolumn">
+					<div class="card2">
+						<h2><b>CATALOGUE</b></h2>
+						<div class="catalogue">
+							<a href="#1">FOUNDER</a><br/><br/>
+							<a href="#2">INSPIRATION</a><br/><br/>
+							<a href="#3">CLUB MEMBER</a><br/><br/>
+							<a href="#4">COMPETITION</a><br/><br/>
+							<a href="#5">TEAMS AND PLAYERS</a><br/><br/>
+							<a href="#6"><li>Singles</li></a><br/><br/>
+							<a href="#7"><li>Doubles</li></a>
+						</div>
+					</div>
+					
+					<div class="card">
+						<h3>Popular Post</h3>
+						<div class="slideshow-container">
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 3</div>
+							  <a target="_blank" href="https://www.facebook.com/photo/?fbid=1089122404616627&set=a.1089120047950196">
+								  <img src="Images/women's-double.jpg">
+							  </a>
+							</div>
+						
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 3</div>
+							  <a target="_blank" href="https://www.facebook.com/apubadmintonclub/posts/pfbid02rYU9i4MBbEVAeX8Tyj2N8b6gBb7nNfbiHvTPrmKeynqS9oDLDY8ouUTygneEtXCEl">
+								  <img src="Images/Women's-singles.jpg">
+							  </a>
+							</div>
+						
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 3</div>
+							  <a target="_blank" href="https://www.facebook.com/photo/?fbid=1089121924616675&set=a.1089120047950196">
+								  <img src="Images/men's-double.jpg">
+							  </a>					    
+							</div>
+						
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br/>
+					
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						  <span class="dot" onclick="currentSlide(3)"></span>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+			<div id="cover">
+				<a href="bod.html">
+				<div class="button_slide slide_left">Back</div>
+				</a>
+				<a href="login.html">
+				<div class="button_slide slide_right">Next</div>
+				</a>
+			</div>
+	
+			<br/><br/>
+	
+			<div id="footer">
+			<div class="footer-left">
+				<h3>Sunshine Badminton Club</h3>
+		
+				<p>Copyright &#169; 2023 Sunshine Badminton Club <br/>All rights reserved</p>
+			</div>
+			
+			<div class="footer-center">
+				<table>
+					<tr>
+						<td><img src="icon for footer/envelope.png" class="footer-envelope" alt="icon"/></td>
+						<td><p>sunshinebadmintonclub@mail.apu.edu.my</p></td>
+					</tr>
+					<tr>
+						<td><img src="icon for footer/phone.png" class="footer-phone" alt="icon"/></td>
+						<td><p>016-804-0107 - Janice Tan Hooi Chii <br/>
+							011-1088-7482 - Lim Shu Yi <br/>
+							010-770-2168 - Kong Yin Er <br/>
+							017-222-0611 - Nicole Lim Ko Er</p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="icon for footer/location.png" class="footer-location" alt="icon"/></td>
+						<td><p>04-01, Block B, Level 3 @ APU New Campus</p></td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="footer-right">
+				<p class="footer-aboutclub">
+					<span>About the club</span>
+					Sunshine Badminton Club fosters an inclusive and friendly environment for badminton enthusiasts, providing a platform for players of all skill levels to engage in the sport with joy.
+				</p>
+		
+				<p class="footer-query">
+					<span>Any questions?</span>
+					Get to Contact Us Page by clicking <a href="contactinfo.html">HERE</a>
+				</p>
+			</div>
+		</div>
+	<div id="footer-credit">Created by: Lim Shu Yi TP074665</div>
+	
+	</body>
+	
+	</html>
+	
+	
+	
+	
+	        
+	        	
+	        	
